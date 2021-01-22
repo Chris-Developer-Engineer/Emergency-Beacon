@@ -1,0 +1,10 @@
+GPS location is monitored by Apple and must be compliant to publish the app.
+This includes requesting authorization for the users location with a detailed description presented as to why we need access.
+The location accuracy is determined by the users location and updates when the user is in motion.
+
+1. import CoreLocation
+2. extend CLLocationManagerDelegate
+3. location ran by the manager object of type CLLocationManager for use in obtaining all location access
+4. include function locationManager to check location
+
+The location is checked to ensure that either a lontitude or latitude is present before sending through SMS. Later versions may include the location on the main screen of the application but it does not seem necessary at this time
